@@ -578,5 +578,17 @@
     img.addEventListener('error',function(){ if(img.classList.contains('ph')||img.classList.contains('photo')){img.style.opacity=.0;img.style.background='#dcebdd';} });
   });
 </script>
+
+<!-- MP Launch preview open-tracking — texts Peter when a lead opens this preview -->
+<script>
+(function(){try{
+  if(navigator.webdriver)return;
+  var slug="denton-preview", label="Fiona Denton — Denton Clinical Psychology";
+  var k="mpl_seen_"+slug, last=+localStorage.getItem(k)||0;
+  if(Date.now()-last<432e5)return;
+  localStorage.setItem(k,String(Date.now()));
+  new Image().src="https://mplaunch.com.au/api/preview-view?slug="+encodeURIComponent(slug)+"&label="+encodeURIComponent(label)+"&t="+Date.now();
+}catch(e){}})();
+</script>
 </body>
 </html>
