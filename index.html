@@ -1,594 +1,546 @@
-<!DOCTYPE html>
-<html lang="en-AU">
+<!doctype html>
+<html lang="en-AU" class="no-js">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex, nofollow" />
-<title>Denton Clinical Psychology — Compassionate, evidence-based therapy</title>
-<meta name="description" content="Caring, evidence-based therapy for individuals, children and families. Eight AHPRA-registered clinical psychologists. Now welcoming clients at our warm new location. Medicare rebates available." />
-<link rel="icon" href="https://dentonpsychology.com.au/wp-content/uploads/2024/06/cropped-DCP-rounded-corners-logo-32x32.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<!-- Before first paint: mark JS alive + arm a 3s rescue. If the reveal script
-     never runs (blocked/broken JS) the class drops and the html:not(.js) rule
-     below forces all .reveal content visible - the page must stay readable
-     without JavaScript. -->
-<script>document.documentElement.classList.add('js');window.__revealRescue=setTimeout(function(){document.documentElement.classList.remove('js')},3000);</script>
-<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
-<style>
-  :root{
-    --green:#13612e;          /* brand deep green */
-    --green-700:#1c7a3c;      /* lighter green for hover */
-    --green-200:#cfe4d4;      /* soft green */
-    --sage:#eaf2ea;           /* pale green section bg */
-    --sage-deep:#dcebdd;
-    --cream:#faf8f2;          /* warm off-white main bg */
-    --cream-2:#f4f1e8;
-    --ink:#2c352f;            /* warm near-black text */
-    --muted:#637068;          /* secondary text */
-    --line:#e4e7df;
-    --blue:#5d7e8f;           /* dusty blue micro-accent */
-    --clay:#bf8350;           /* warm earth micro-accent */
-    --white:#ffffff;
-    --shadow:0 18px 50px -20px rgba(19,97,46,.28);
-    --shadow-sm:0 8px 24px -12px rgba(28,42,33,.22);
-    --r:22px;
-    --maxw:1160px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#164c3c">
+  <title>Denton Clinical Psychology | Warm, evidence-based care</title>
+  <meta name="description" content="Compassionate, evidence-based clinical psychology for school-aged children, adolescents and adults in Pennant Hills and online.">
+  <meta property="og:title" content="Denton Clinical Psychology">
+  <meta property="og:description" content="A calm, accepting place to feel heard and move forward.">
+  <meta property="og:image" content="https://mplaunch.github.io/denton-preview/assets/hero-consulting-room.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AU">
+  <link rel="icon" href="assets/denton-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+    document.documentElement.classList.add("js");
+    window.__revealRescue = setTimeout(function () {
+      document.documentElement.classList.remove("js");
+    }, 3000);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://dentonpsychology.com.au/#clinic",
+        "name": "Denton Clinical Psychology",
+        "url": "https://dentonpsychology.com.au/",
+        "telephone": "+61 2 9980 5729",
+        "email": "admin@dentonpsychology.com.au",
+        "foundingDate": "2005",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Suite B, First Floor, 5 Hillcrest Road",
+          "addressLocality": "Pennant Hills",
+          "addressRegion": "NSW",
+          "postalCode": "2120",
+          "addressCountry": "AU"
+        },
+        "areaServed": ["Pennant Hills", "Hornsby", "The Hills District", "Sydney", "Australia"],
+        "sameAs": [
+          "https://www.facebook.com/dentonclinicalpsychology",
+          "https://www.instagram.com/dentonclinicalpsychology/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://dentonpsychology.com.au/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a referral to see a psychologist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You can make an appointment without a referral. A GP Mental Health Treatment Plan is required if you want to claim an eligible Medicare rebate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens at the first appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your psychologist will listen to what has brought you in, ask about how it is affecting your life and discuss how therapy may help. You are welcome to ask questions and can choose not to answer anything you are not comfortable sharing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are telehealth appointments available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Telehealth appointments are available. Contact the practice to discuss availability and whether online appointments are suitable for your needs."
+            }
+          }
+        ]
+      }
+    ]
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Nunito Sans",-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    color:var(--ink);background:var(--cream);
-    font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,.serif{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em;color:var(--ink)}
-  h1{font-size:clamp(2.3rem,5vw,3.7rem)}
-  h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}
-  h3{font-size:1.28rem;font-weight:600}
-  p{margin:0 0 1rem}
-  a{color:var(--green);text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .eyebrow{font-family:"Montserrat","Nunito Sans",sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:800;color:var(--green);display:inline-flex;align-items:center;gap:.5rem}
-  .eyebrow::before{content:"";width:26px;height:2px;background:var(--clay);display:inline-block;border-radius:2px}
-  .muted{color:var(--muted)}
-  section{padding:84px 0}
-  .center{text-align:center}
-  .lead{font-size:1.18rem;color:var(--muted);max-width:62ch}
-  .center .lead{margin-left:auto;margin-right:auto}
-
-  /* buttons */
-  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:800;font-size:1rem;
-    padding:15px 28px;border-radius:100px;border:2px solid transparent;cursor:pointer;transition:.2s;font-family:"Nunito Sans",sans-serif}
-  .btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-sm)}
-  .btn-primary:hover{background:var(--green-700);transform:translateY(-2px)}
-  .btn-ghost{background:#fff;color:var(--green);border-color:var(--green-200)}
-  .btn-ghost:hover{border-color:var(--green);background:var(--sage)}
-  .btn svg{width:18px;height:18px}
-
-  /* top announcement bar */
-  .topbar{background:var(--green);color:#eaf7ee;font-size:.92rem;font-weight:600;text-align:center;padding:9px 16px}
-  .topbar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
-  .topbar b{color:#fff}
-
-  /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(250,248,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 24px;max-width:1240px;margin:0 auto}
-  .brand{display:flex;align-items:center;gap:12px}
-  .brand img{height:46px;width:auto}
-  .navlinks{display:flex;gap:26px;align-items:center}
-  .navlinks a{color:var(--ink);font-weight:700;font-size:.97rem}
-  .navlinks a:hover{color:var(--green)}
-  .navcta{display:flex;align-items:center;gap:14px}
-  .phone-link{display:inline-flex;align-items:center;gap:7px;font-weight:800;color:var(--green)}
-  .phone-link svg{width:17px;height:17px}
-  .menu-btn{display:none;background:none;border:0;cursor:pointer}
-
-  /* hero */
-  .hero{position:relative;overflow:hidden;background:
-     radial-gradient(1100px 520px at 88% -8%, var(--sage-deep), transparent 60%),
-     radial-gradient(900px 480px at -5% 110%, #eef3ea, transparent 55%),
-     var(--cream)}
-  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding-top:70px;padding-bottom:78px}
-  .hero h1{margin:.5rem 0 1rem}
-  .hero h1 em{font-style:italic;color:var(--green)}
-  .hero p.sub{font-size:1.22rem;color:var(--muted);max-width:52ch;margin-bottom:1.7rem}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-  .chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 15px;font-size:.86rem;font-weight:700;color:var(--ink);box-shadow:var(--shadow-sm)}
-  .chip svg{width:15px;height:15px;color:var(--green)}
-
-  /* hero portrait card */
-  .portrait{position:relative}
-  .portrait .card{background:#fff;border-radius:28px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--line);max-width:420px;margin-left:auto}
-  .portrait .photo{width:100%;aspect-ratio:4/4.3;border-radius:18px;object-fit:cover;object-position:top center;display:block;background:var(--sage)}
-  .portrait .pcap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 10px 8px}
-  .portrait .pcap .nm{font-weight:800;line-height:1.2}
-  .portrait .pcap .rl{font-size:.84rem;color:var(--muted)}
-  .portrait .prate{text-align:right;line-height:1.3;white-space:nowrap}
-  .portrait .prate .stars{display:block;color:#e8a93a;letter-spacing:1px;font-size:.92rem}
-  .leafmark{position:absolute;right:-30px;top:-26px;width:120px;opacity:.5;color:var(--green-200)}
-
-  /* reassurance band */
-  .reassure{background:var(--green);color:#eaf7ee;text-align:center}
-  .reassure h2{color:#fff;max-width:20ch;margin:0 auto .6rem}
-  .reassure p{color:#cfe6d6;max-width:60ch;margin:0 auto;font-size:1.12rem}
-
-  /* trust strip */
-  .trust{background:var(--cream);border-bottom:1px solid var(--line)}
-  .trust .row{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;align-items:center}
-  .trust .item{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink);font-size:.98rem}
-  .trust .item svg{width:22px;height:22px;color:var(--green)}
-  .trust img.acpa{height:46px;width:auto}
-
-  /* services */
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
-  .scard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;transition:.22s}
-  .scard:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--green-200)}
-  .scard .ic{width:52px;height:52px;border-radius:14px;background:var(--sage);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-  .scard .ic svg{width:26px;height:26px;color:var(--green)}
-  .scard h3{margin-bottom:.4rem}
-  .scard p{color:var(--muted);font-size:.98rem;margin:0}
-  .scard.feature{background:linear-gradient(160deg,#16692f,#0f4f26);border-color:transparent;color:#eaf7ee}
-  .scard.feature h3{color:#fff}.scard.feature p{color:#cfe6d6}
-  .scard.feature .ic{background:rgba(255,255,255,.14)}.scard.feature .ic svg{color:#fff}
-  .scard.feature .tag{display:inline-block;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;background:rgba(255,255,255,.18);padding:4px 10px;border-radius:100px;margin-bottom:12px}
-
-  /* team */
-  .team{background:var(--sage)}
-  .teamgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:42px}
-  .tcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-align:center;transition:.2s}
-  .tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-  .tcard .ph{width:100%;aspect-ratio:1/1.04;object-fit:cover;object-position:top center;background:var(--sage-deep);display:block}
-  .tcard .tn{font-weight:800;margin-top:14px;padding:0 10px}
-  .tcard .tr{font-size:.84rem;color:var(--muted);padding:0 10px 16px}
-
-  /* founder */
-  .founder{background:var(--cream)}
-  .founder .wrap{max-width:840px;text-align:center}
-  .founder .eyebrow{justify-content:center;display:flex}
-  .fquote{font-family:"Fraunces",serif;font-size:clamp(1.35rem,2.5vw,1.95rem);line-height:1.42;color:var(--ink);font-style:italic;margin:20px auto 28px;max-width:780px}
-  .fsig{display:flex;align-items:center;justify-content:center;gap:14px}
-  .fsig img{width:62px;height:62px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid var(--green-200)}
-  .fsig .nm{font-weight:800;text-align:left;line-height:1.2}
-  .fsig .rl{font-size:.85rem;color:var(--muted);text-align:left}
-
-  /* steps */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:42px;counter-reset:s}
-  .step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;position:relative}
-  .step .no{counter-increment:s;font-family:"Fraunces",serif;font-size:2.2rem;color:var(--green-200);font-weight:600;line-height:1}
-  .step .no::before{content:counter(s)}
-  .step h3{margin:.4rem 0 .35rem;font-size:1.12rem}
-  .step p{color:var(--muted);font-size:.95rem;margin:0}
-
-  /* fees */
-  .fees{background:var(--cream)}
-  .feewrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .feebox{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px;box-shadow:var(--shadow-sm)}
-  .feerow{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px dashed var(--line)}
-  .feerow:last-child{border-bottom:0}
-  .feerow .k{font-weight:700}
-  .feerow .v{font-weight:800;color:var(--green);text-align:right;white-space:nowrap}
-  .feenote{font-size:.92rem;color:var(--muted);margin-top:14px}
-  .checklist{list-style:none;margin:18px 0 0}
-  .checklist li{display:flex;gap:12px;align-items:flex-start;margin-bottom:13px;color:var(--ink)}
-  .checklist svg{width:22px;height:22px;color:var(--green);flex:none;margin-top:2px}
-
-  /* christian band */
-  .faith{background:linear-gradient(150deg,#f4f1e8,#eef3ea)}
-  .faith .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
-  .faith .ill{display:flex;justify-content:center}
-  .faith .ill svg{width:170px;height:170px;color:var(--green);opacity:.85}
-
-  /* location */
-  .loc .wrap{display:block}
-  .locgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
-  .mapcard{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:330px;position:relative;
-    background:linear-gradient(135deg,#e9f0e9,#dfeae0)}
-  .mapcard .pin{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--green);text-align:center;padding:24px}
-  .mapcard .pin svg{width:46px;height:46px}
-  .loccard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px}
-  .loccard .li{display:flex;gap:14px;margin-bottom:18px}
-  .loccard .li svg{width:22px;height:22px;color:var(--green);flex:none;margin-top:3px}
-
-  /* CTA / form */
-  .cta{background:var(--green);color:#eaf7ee}
-  .cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-  .cta h2{color:#fff}
-  .cta p{color:#cfe6d6}
-  .form{background:#fff;border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
-  .form label{display:block;font-weight:700;color:var(--ink);font-size:.9rem;margin:0 0 6px}
-  .form input,.form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:1rem;margin-bottom:15px;background:var(--cream);color:var(--ink)}
-  .form textarea{min-height:96px;resize:vertical}
-  .form .btn-primary{width:100%;justify-content:center}
-  .form .reassure-line{font-size:.86rem;color:var(--muted);text-align:center;margin:12px 0 0;display:flex;gap:7px;align-items:center;justify-content:center}
-  .form .reassure-line svg{width:15px;height:15px;color:var(--green)}
-
-  /* footer */
-  footer{background:#10401f;color:#bcd6c3;font-size:.95rem;padding:60px 0 28px}
-  footer a{color:#dcebdd}
-  .fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px}
-  footer h4{color:#fff;font-family:"Nunito Sans";font-weight:800;font-size:.92rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
-  footer ul{list-style:none}footer li{margin-bottom:9px}
-  .footlogo{height:54px;margin-bottom:16px;background:#fff;padding:9px 14px;border-radius:12px}
-  .socials{display:flex;gap:12px;margin-top:14px}
-  .socials a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center}
-  .socials svg{width:18px;height:18px;color:#fff}
-  .fbar{border-top:1px solid rgba(255,255,255,.13);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem;color:#8fb39a}
-
-  /* concept ribbon */
-  .concept-ribbon{position:fixed;right:14px;bottom:14px;z-index:80;background:var(--ink);color:#fff;border-radius:100px;padding:9px 16px;font-size:.8rem;font-weight:700;box-shadow:var(--shadow);display:flex;align-items:center;gap:8px;opacity:.92}
-  .concept-ribbon b{color:#9fe6b5}
-
-  /* reveal anim */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
-  html:not(.js) .reveal{opacity:1 !important;transform:none !important}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-
-  /* responsive */
-  @media(max-width:900px){
-    .hero .wrap,.feewrap,.faith .wrap,.loc .wrap,.cta .wrap,.locgrid{grid-template-columns:1fr}
-    .grid3,.teamgrid,.steps{grid-template-columns:1fr 1fr}
-    .navlinks{display:none}
-    .menu-btn{display:block}
-    .portrait .card{margin:0 auto}
-    .badge-float{left:6px}
-    .fcols{grid-template-columns:1fr 1fr}
-    section{padding:60px 0}
-  }
-  @media(max-width:560px){
-    .grid3,.teamgrid,.steps,.fcols{grid-template-columns:1fr}
-    .trust .row{gap:18px}
-    .hero p.sub{font-size:1.08rem}
-    .navcta .btn{display:none}
-  }
-</style>
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- announcement -->
-<div class="topbar">🌿 <b>We're moving</b> — soon welcoming new and existing clients at our warm <b>new location</b>. &nbsp;<a href="#contact">Get in touch&nbsp;→</a></div>
+  <aside class="crisis-bar" aria-label="Crisis support notice">
+    <span>Denton Clinical Psychology is not a crisis service.</span>
+    <span class="crisis-links">
+      Immediate danger: <a href="tel:000">000</a>
+      <i aria-hidden="true"></i>
+      Lifeline: <a href="tel:+61131114">13 11 14</a>
+    </span>
+  </aside>
 
-<!-- header -->
-<header>
-  <nav class="nav">
-    <a class="brand" href="#top">
-      <img src="https://dentonpsychology.com.au/wp-content/uploads/2026/01/cropped-Transparent-DCP-rounded-corners-logo-with-frame.png" alt="Denton Clinical Psychology" />
-    </a>
-    <div class="navlinks">
-      <a href="#help">How we help</a>
-      <a href="#team">Our psychologists</a>
-      <a href="#expect">What to expect</a>
-      <a href="#fees">Fees &amp; Medicare</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Denton Clinical Psychology, home">
+        <img src="assets/denton-logo.svg" alt="Denton Clinical Psychology">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#approach">Our approach</a>
+        <a href="#support">How we help</a>
+        <a href="#team">Psychologists</a>
+        <a href="#faq">Fees &amp; FAQs</a>
+      </nav>
+
+      <a class="button button-small header-cta" href="#contact">
+        Request an appointment
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
     </div>
-    <div class="navcta">
-      <a class="phone-link" href="tel:0299805742"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(02) 9980 5742</a>
-      <a class="btn btn-primary" href="#contact">Make an enquiry</a>
-    </div>
-    <button class="menu-btn" aria-label="Menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#13612e" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-  </nav>
-</header>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#approach">Our approach</a>
+      <a href="#support">How we help</a>
+      <a href="#team">Psychologists</a>
+      <a href="#faq">Fees &amp; FAQs</a>
+      <a href="#contact">Request an appointment</a>
+    </nav>
+  </header>
 
-<a id="top"></a>
-<!-- hero -->
-<section class="hero">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Clinical Psychology · Est. 2005</span>
-      <h1>Support for you, your child, or your <em>family</em> — whenever you're ready.</h1>
-      <p class="sub">Compassionate, evidence-based therapy from eight caring clinical psychologists. Reaching out can feel hard — we make the first step simple, with a warm, no-pressure conversation.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#contact">Make an enquiry
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="tel:0299805742">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call us today</a>
-      </div>
-      <div class="chips">
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>20 years caring for our community</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>AHPRA-registered psychologists</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Medicare rebates available</span>
-      </div>
-    </div>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero-consulting-room.webp" alt="A calm, sunlit psychology consultation room" fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
 
-    <div class="portrait reveal">
-      <svg class="leafmark" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
-      <div class="card">
-        <img class="photo" loading="eager" src="https://dentonpsychology.com.au/wp-content/uploads/2025/11/20251127-Fiona-headshot-scaled.png" alt="Dr Fiona Denton, Founder and Clinical Psychologist" />
-        <div class="pcap">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Clinical psychologists · Pennant Hills &amp; telehealth</p>
+          <h1 id="hero-title">Space to feel heard.<br><em>Support to move forward.</em></h1>
+          <p class="hero-lead">Warm, evidence-based therapy for school-aged children, adolescents and adults—thoughtfully tailored to the person, not just the problem.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">
+              Request an appointment
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+            <a class="text-link" href="tel:+61299805729">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (02) 9980 5729
+            </a>
+          </div>
+          <ul class="trust-list" aria-label="Practice highlights">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              Caring for the community since 2005
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              AHPRA-registered clinical psychologists
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              Medicare rebates may be available
+            </li>
+          </ul>
+        </div>
+
+        <div class="founder-card reveal">
+          <img src="assets/team/fiona-denton.webp" alt="Dr Fiona Denton, founder and clinical psychologist">
           <div>
-            <div class="nm">Dr Fiona Denton</div>
-            <div class="rl">Founder · Clinical Psychologist</div>
+            <span class="founder-kicker">A welcome from our founder</span>
+            <strong>Dr Fiona Denton</strong>
+            <p>DClinPsych, MSc(Psych), BPsych(Hons), MACPA</p>
           </div>
-          <div class="prate">
-            <span class="stars">★★★★★</span>
-            <span class="rl">Trusted since 2005</span>
+          <svg class="founder-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Practice credentials">
+      <div class="container proof-inner">
+        <div class="proof-copy">
+          <span class="proof-number">20+</span>
+          <span>years creating a warm, accepting place for change</span>
+        </div>
+        <div class="proof-divider" aria-hidden="true"></div>
+        <p>Postgraduate-qualified clinicians · Evidence-based therapies · After-hours appointments available</p>
+        <img src="assets/acpa-member.png" alt="Australian Clinical Psychology Association member">
+      </div>
+    </section>
+
+    <section class="intro section" id="approach">
+      <div class="container intro-grid">
+        <div class="portrait-frame reveal">
+          <div class="arch-outline" aria-hidden="true"></div>
+          <img src="assets/team/fiona-denton.webp" alt="Dr Fiona Denton">
+          <div class="portrait-note">
+            <span>Founded in</span>
+            <strong>2005</strong>
+          </div>
+        </div>
+
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Professional care that still feels human</p>
+          <h2>Therapy begins with feeling safe enough to be yourself.</h2>
+          <p class="lead">Denton Clinical Psychology combines the depth of specialist clinical training with a genuinely warm, collaborative approach. We take time to understand your life, your goals and what matters to you.</p>
+          <blockquote>
+            “It is of the utmost importance to me that our practice is professional, yet warm, safe and accepting of all who walk through our door.”
+            <cite>— Dr Fiona Denton, Founder &amp; Clinical Psychologist</cite>
+          </blockquote>
+          <a class="inline-link" href="#team">
+            Meet our psychologists
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="support section" id="support">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">How we can help</p>
+            <h2>Support for the part of life you’re in.</h2>
+          </div>
+          <p>Our team works with a broad range of mental health concerns, using proven therapies adapted to each person’s age, needs and goals.</p>
+        </div>
+
+        <div class="support-grid">
+          <article class="support-card card-adults reveal">
+            <div class="card-number">01</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6c0 4 2 5 2 8h8c0-3 2-4 2-8a6 6 0 0 0-6-6Z"/><path d="M9 21h6M9 17h6"/></svg>
+            </div>
+            <h3>Adults</h3>
+            <p>Practical, compassionate therapy to understand patterns, ease distress and build a life that feels more manageable and meaningful.</p>
+            <ul>
+              <li>Anxiety, stress &amp; OCD</li>
+              <li>Depression &amp; low self-esteem</li>
+              <li>Trauma, grief &amp; life transitions</li>
+              <li>Chronic illness &amp; pain</li>
+            </ul>
+          </article>
+
+          <article class="support-card card-young reveal">
+            <div class="card-number">02</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20c1-4 3-6 8-6s7 2 8 6"/><circle cx="12" cy="7" r="4"/><path d="M5 11c-1-1-1-3 0-4m14 4c1-1 1-3 0-4"/></svg>
+            </div>
+            <h3>Children &amp; adolescents</h3>
+            <p>Age-appropriate support for school-aged children and teenagers, with thoughtful guidance for the parents who care for them.</p>
+            <ul>
+              <li>Anxiety &amp; emotional regulation</li>
+              <li>School, study &amp; social stress</li>
+              <li>Grief, family change &amp; adjustment</li>
+              <li>Confidence &amp; resilience</li>
+            </ul>
+          </article>
+
+          <article class="support-card card-relationships reveal">
+            <div class="card-number">03</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            </div>
+            <h3>Relationships &amp; families</h3>
+            <p>A respectful, balanced space to understand what is happening between you, repair connection and find a healthier way forward.</p>
+            <ul>
+              <li>Couples counselling</li>
+              <li>Family counselling</li>
+              <li>Parenting support</li>
+              <li>Communication &amp; conflict</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="methods reveal">
+          <span>Therapies our clinicians draw from</span>
+          <ul>
+            <li>CBT</li><li>ACT</li><li>EMDR</li><li>Schema Therapy</li><li>Mindfulness</li><li>DBT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-heading team-heading reveal">
+          <div>
+            <p class="eyebrow">Meet the team</p>
+            <h2>The right psychologist matters.</h2>
+          </div>
+          <p>Every clinician brings specialist training and their own way of connecting. Our practice team can help match you with someone who feels like the right fit.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="person-card reveal">
+            <img src="assets/team/fiona-denton.webp" alt="Dr Fiona Denton" loading="lazy">
+            <div class="person-copy"><h3>Dr Fiona Denton</h3><p>Founder · Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/emma-bryant.webp" alt="Dr Emma Bryant" loading="lazy">
+            <div class="person-copy"><h3>Dr Emma Bryant</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/geaty-hamid.webp" alt="Geaty Hamid" loading="lazy">
+            <div class="person-copy"><h3>Geaty Hamid</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/fiona-tung.webp" alt="Fiona Tung" loading="lazy">
+            <div class="person-copy"><h3>Fiona Tung</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/sunali-lewis.webp" alt="Sunali Lewis" loading="lazy">
+            <div class="person-copy"><h3>Sunali Lewis</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/siobhan-mclean.webp" alt="Siobhan McLean" loading="lazy">
+            <div class="person-copy"><h3>Siobhan McLean</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/annie-kwok.webp" alt="Annie Kwok" loading="lazy">
+            <div class="person-copy"><h3>Annie Kwok</h3><p>Clinical Psychologist</p></div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team/anne-perrottet.webp" alt="Anne Perrottet" loading="lazy">
+            <div class="person-copy"><h3>Anne Perrottet</h3><p>Counsellor · Individuals, families &amp; couples</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faith section">
+      <div class="container faith-shell reveal">
+        <div class="faith-mark" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 84 96"><path d="M10 88V43C10 22.6 24.3 8 42 8s32 14.6 32 35v45"/><path d="M5 88c17.2-2.7 34.5-2.7 52 0 8.4 1.3 15.7 1.1 22-.6"/></svg>
+        </div>
+        <div class="faith-copy">
+          <p class="eyebrow">Faith-aligned care, if you’d value it</p>
+          <h2>Clinical psychology that can make room for your Christian faith.</h2>
+          <p>Some clients feel more comfortable with a clinician who understands their Christian worldview. Several members of our team can thoughtfully incorporate faith into evidence-based therapy when you request it. The choice is always yours, and every client receives the same respectful, non-judgemental standard of care.</p>
+          <a class="inline-link light-link" href="#contact">
+            Ask about faith-aligned care
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="faith-stat">
+          <strong>Shared worldview.</strong>
+          <span>Specialist clinical training.</span>
+          <small>Always guided by your preferences and values.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section" id="faq">
+      <div class="container steps-grid">
+        <div class="steps-copy reveal">
+          <p class="eyebrow">What happens next</p>
+          <h2>Reaching out can be simple.</h2>
+          <p class="lead">You do not need to have everything worked out before you call. Our practice team will listen, answer your questions and help you find the next step.</p>
+          <ol class="step-list">
+            <li>
+              <span>1</span>
+              <div><strong>Call or send an enquiry</strong><p>Tell us who the appointment is for and anything that matters when choosing a clinician.</p></div>
+            </li>
+            <li>
+              <span>2</span>
+              <div><strong>We help find the right fit</strong><p>We consider your needs, preferences, availability and the clinician’s areas of experience.</p></div>
+            </li>
+            <li>
+              <span>3</span>
+              <div><strong>Meet at your pace</strong><p>Your first session is a conversation to understand what is happening and discuss how therapy may help.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="faq-panel reveal">
+          <div class="fees-snapshot">
+            <div>
+              <span>Standard 55-minute session</span>
+              <strong>$200–$265</strong>
+            </div>
+            <p>Fees vary by clinician. Eligible clients may claim a Medicare rebate with a GP Mental Health Treatment Plan.</p>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <article class="faq-item open">
+              <button type="button" aria-expanded="true">
+                <span>Do I need a referral?</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer"><p>No. You can make an appointment without a referral. A GP Mental Health Treatment Plan is required if you want to claim an eligible Medicare rebate.</p></div>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                <span>What happens at the first appointment?</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer"><p>Your psychologist will listen to what has brought you in, ask how it is affecting your life and discuss how therapy may help. You can ask questions and choose not to answer anything you are not comfortable sharing.</p></div>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                <span>Who does the practice see?</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer"><p>The team sees school-aged children, adolescents and adults, as well as couples and families. The practice does not currently offer preschool, ADHD, developmental or IQ assessments.</p></div>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                <span>Are telehealth appointments available?</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer"><p>Yes. Telehealth appointments are available. Contact the practice to discuss availability and whether online appointments are suitable for your needs.</p></div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- reassurance -->
-<section class="reassure">
-  <div class="wrap reveal">
-    <h2>Taking the first step is often the hardest part.</h2>
-    <p>There's no pressure here — just qualified, caring clinical psychologists ready to listen and help, in their own time and at your pace.</p>
-  </div>
-</section>
+    <section class="contact section" id="contact">
+      <div class="container contact-shell">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Request an appointment</p>
+          <h2>A friendly first conversation—without pressure.</h2>
+          <p>Leave your details and the practice team will get back to you. You do not need to describe anything personal here.</p>
 
-<!-- trust strip -->
-<section class="trust" style="padding:34px 0">
-  <div class="wrap reveal">
-    <div class="row">
-      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>8 Clinical Psychologists</div>
-      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>AHPRA Registered</div>
-      <img class="acpa" src="https://dentonpsychology.com.au/wp-content/uploads/2025/03/ACPA_MemberLogo_Colour_Digital-1024x256.png" alt="Member of the Australian Clinical Psychology Association (ACPA)" />
-      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>Telehealth Australia-wide</div>
-    </div>
-  </div>
-</section>
+          <div class="contact-details">
+            <a href="tel:+61299805729">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span><small>Call the practice</small><strong>(02) 9980 5729</strong></span>
+            </a>
+            <a href="mailto:admin@dentonpsychology.com.au">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+              <span><small>Email</small><strong>admin@dentonpsychology.com.au</strong></span>
+            </a>
+            <a href="https://maps.google.com/?q=Suite+B,+First+Floor,+5+Hillcrest+Road,+Pennant+Hills+NSW+2120" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><small>Visit</small><strong>5 Hillcrest Rd, Pennant Hills</strong><em>First-floor rooms · stair access only</em></span>
+            </a>
+          </div>
+        </div>
 
-<!-- services -->
-<section id="help">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">How we help</span>
-      <h2>Evidence-based therapy, tailored to you</h2>
-      <p class="lead">Our clinical psychologists support children, adolescents and adults across a wide range of life's challenges — always with warmth, and always grounded in what the research shows works.</p>
-    </div>
-    <div class="grid3">
-      <div class="scard reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>Anxiety &amp; stress</h3>
-        <p>Practical, proven strategies to quiet worry, ease panic and feel more in control of day-to-day life.</p>
-      </div>
-      <div class="scard reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h3>Depression &amp; low mood</h3>
-        <p>Compassionate support to lift heaviness, rebuild motivation and reconnect with the things that matter.</p>
-      </div>
-      <div class="scard reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Children &amp; teens</h3>
-        <p>Gentle, age-appropriate care for young people — and guidance for parents who want to help.</p>
-      </div>
-      <div class="scard reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Couples &amp; family</h3>
-        <p>A calm, neutral space to understand each other, repair connection and move forward together.</p>
-      </div>
-      <div class="scard reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
-        <h3>Trauma &amp; grief</h3>
-        <p>Safe, paced, evidence-based support to process difficult experiences and loss when you're ready.</p>
-      </div>
-      <div class="scard feature reveal">
-        <span class="tag">If you'd like it</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 9h14"/></svg></div>
-        <h3>Christian counselling</h3>
-        <p>For clients who'd value it, several of our psychologists offer evidence-based therapy that respects and incorporates your Christian faith.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <form class="enquiry-form reveal" id="enquiry-form">
+          <div class="form-heading">
+            <span class="form-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            </span>
+            <div><strong>How can we reach you?</strong><p>Only the essentials—nothing sensitive.</p></div>
+          </div>
 
-<!-- team -->
-<section id="team" class="team">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Our psychologists</span>
-      <h2>Meet the people you'll be talking to</h2>
-      <p class="lead">Finding the right fit matters. Our psychologists are warm, highly qualified and AHPRA-registered — get to know them a little before you reach out.</p>
-    </div>
-    <div class="teamgrid">
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2025/11/20251127-Fiona-headshot-scaled.png" alt="Dr Fiona Denton"><div class="tn">Dr Fiona Denton</div><div class="tr">Founder · Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2025/12/Emma-edit-1-smaller.png" alt="Dr Emma Bryant"><div class="tn">Dr Emma Bryant</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2025/11/2025-Geaty-scaled.png" alt="Geaty Hamid"><div class="tn">Geaty Hamid</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2026/01/2025-Fiona-T-cropped.png" alt="Fiona Tung"><div class="tn">Fiona Tung</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2019/01/Sunali.jpg" alt="Sunali Lewis"><div class="tn">Sunali Lewis</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2020/06/Siobhan-McLean-head-shot-scaled.jpg" alt="Siobhan McLean"><div class="tn">Siobhan McLean</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2023/06/Annie-K-scaled.jpg" alt="Annie Kwok"><div class="tn">Annie Kwok</div><div class="tr">Clinical Psychologist</div></div>
-      <div class="tcard reveal"><img class="ph" loading="lazy" src="https://dentonpsychology.com.au/wp-content/uploads/2026/01/Anne-edited-cropped.jpg" alt="Anne Perrottet"><div class="tn">Anne Perrottet</div><div class="tr">Counsellor · Individuals, Family &amp; Couples</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- founder's note -->
-<section class="founder">
-  <div class="wrap reveal">
-    <span class="eyebrow">From our founder</span>
-    <p class="fquote">"I founded Denton Clinical Psychology in 2005, and I'm just as passionate today about using clinical psychology to help people live the life they want to live. Whatever you're facing, our team is here to walk alongside you — with genuine care, and at your pace."</p>
-    <div class="fsig">
-      <img src="https://dentonpsychology.com.au/wp-content/uploads/2025/11/20251127-Fiona-headshot-scaled.png" alt="Dr Fiona Denton" />
-      <div>
-        <div class="nm">Dr Fiona Denton</div>
-        <div class="rl">Founder &amp; Clinical Psychologist</div>
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-two">
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="enquiry-for">I’m enquiring for</label>
+            <select id="enquiry-for" name="enquiry-for">
+              <option value="myself">Myself</option>
+              <option value="my-child">My child or teenager</option>
+              <option value="relationship">A relationship or family</option>
+              <option value="faith-aligned">Faith-aligned care</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <button class="button form-button" type="submit">
+            Request a callback
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            This preview opens a private email to the practice. The live site will submit securely.
+          </p>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- what to expect -->
-<section id="expect">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">What to expect</span>
-      <h2>Reaching out is simpler than you think</h2>
-      <p class="lead">There's nothing to prepare and nothing to worry about. Here's exactly how it works, from your first hello.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal"><div class="no"></div><h3>Reach out</h3><p>Call us or send a quick enquiry. No pressure, no obligation — just a friendly conversation.</p></div>
-      <div class="step reveal"><div class="no"></div><h3>We match you</h3><p>We'll help you find the psychologist who best suits your needs, including any preferences you have.</p></div>
-      <div class="step reveal"><div class="no"></div><h3>Your first session</h3><p>A relaxed 55-minute conversation, at your pace. You lead — we listen and gently guide.</p></div>
-      <div class="step reveal"><div class="no"></div><h3>A plan, together</h3><p>Practical, evidence-based next steps, tailored to you — so you always know the way forward.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- fees & medicare -->
-<section id="fees" class="fees">
-  <div class="wrap">
-    <div class="feewrap">
-      <div class="reveal">
-        <span class="eyebrow">Fees &amp; Medicare</span>
-        <h2>Clear, honest, and often partly subsidised</h2>
-        <p class="lead" style="margin-bottom:6px">We believe cost shouldn't stand in the way of getting support. With a Mental Health Treatment Plan from your GP, Medicare gives you money back on every session.</p>
-        <ul class="checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Claim $145.25 back</b> per session with a clinical psychologist, for up to <b>10 sessions a year</b>, with a GP Mental Health Treatment Plan.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Medicare online claiming</b> — your rebate is processed immediately after you pay.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Not sure how it works? Just ask your GP for a Mental Health Treatment Plan — and we'll guide you the rest of the way.</span></li>
-        </ul>
-      </div>
-      <div class="feebox reveal">
-        <div class="feerow"><span class="k">Standard session<br><span class="muted" style="font-weight:400;font-size:.85rem">55 minutes</span></span><span class="v">$285–$300</span></div>
-        <div class="feerow"><span class="k">Medicare rebate<br><span class="muted" style="font-weight:400;font-size:.85rem">with a Mental Health Treatment Plan</span></span><span class="v">– $145.25</span></div>
-        <div class="feerow"><span class="k">Sessions subsidised<br><span class="muted" style="font-weight:400;font-size:.85rem">per calendar year</span></span><span class="v">Up to 10</span></div>
-        <p class="feenote">Payment by cash, bank transfer, EFTPOS or card (Visa, Mastercard, Amex). A cancellation fee applies for changes made with less than 48 hours' notice.</p>
-        <a class="btn btn-primary" href="#contact" style="width:100%;justify-content:center;margin-top:18px">Ask us about fees</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- christian counselling -->
-<section class="faith">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Faith-aligned care, if you'd like it</span>
-      <h2>Therapy that respects your Christian faith</h2>
-      <p class="lead">For clients who would value it, several of our psychologists provide professional, evidence-based therapy that thoughtfully incorporates your Christian faith and values. It's always your choice — the same high standard of clinical care, aligned with what matters most to you.</p>
-      <a class="btn btn-ghost" href="#contact">Enquire about Christian counselling
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-    <div class="ill reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2v20M5 9h14"/><circle cx="12" cy="12" r="10"/></svg>
-    </div>
-  </div>
-</section>
-
-<!-- location -->
-<section class="loc">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Visit us</span>
-      <h2 style="margin-bottom:24px">Our welcoming new location</h2>
-    </div>
-    <div class="locgrid">
-      <div class="mapcard reveal">
-        <div class="pin">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <strong>A warm new home — opening soon</strong>
-          <span class="muted" style="font-size:.9rem">Easy to reach · close to public transport &amp; parking</span>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/denton-logo.svg" alt="Denton Clinical Psychology">
+        <p>Compassionate, evidence-based therapy for children, adolescents and adults.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/dentonclinicalpsychology" target="_blank" rel="noopener" aria-label="Denton Clinical Psychology on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dentonclinicalpsychology/" target="_blank" rel="noopener" aria-label="Denton Clinical Psychology on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
         </div>
       </div>
-      <div class="loccard reveal">
-        <div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Address</b><br><span class="muted">Our welcoming new rooms — full address provided when you get in touch.</span></div></div>
-        <div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><b>Phone</b><br><a href="tel:0299805742">(02) 9980 5742</a> &nbsp;·&nbsp; <a href="tel:0299805729">(02) 9980 5729</a></div></div>
-        <div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg><div><b>Email</b><br><a href="mailto:admin@dentonpsychology.com.au">admin@dentonpsychology.com.au</a></div></div>
-        <div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Telehealth</b><br><span class="muted">Prefer to meet from home? We offer secure telehealth appointments Australia-wide.</span></div></div>
+      <div class="footer-nav">
+        <strong>Explore</strong>
+        <a href="#approach">Our approach</a>
+        <a href="#support">How we help</a>
+        <a href="#team">Our psychologists</a>
+        <a href="#faq">Fees &amp; FAQs</a>
+      </div>
+      <div class="footer-contact">
+        <strong>Contact</strong>
+        <a href="tel:+61299805729">(02) 9980 5729</a>
+        <a href="mailto:admin@dentonpsychology.com.au">admin@dentonpsychology.com.au</a>
+        <span>Suite B, First Floor<br>5 Hillcrest Road<br>Pennant Hills NSW 2120</span>
+      </div>
+      <div class="footer-crisis">
+        <strong>Need urgent support?</strong>
+        <p>This practice is not a crisis service. In immediate danger call <a href="tel:000">000</a>. For 24/7 crisis support call Lifeline on <a href="tel:+61131114">13 11 14</a>.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- CTA / enquiry -->
-<section id="contact" class="cta">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" style="color:#9fe6b5">Let's talk</span>
-      <h2>Ready to reach out? We're here.</h2>
-      <p class="lead" style="color:#cfe6d6">Tell us a little about what's going on, or simply leave your name and number and we'll call you back. There's no pressure and no obligation — just a friendly conversation to see how we can help.</p>
-      <p style="margin-top:20px"><a class="phone-link" style="color:#fff;font-size:1.25rem" href="tel:0299805742"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:22px;height:22px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (02) 9980 5742</a></p>
+    <div class="container footer-bottom">
+      <span>© 2026 Denton Clinical Psychology. All rights reserved.</span>
+      <span>Privacy · Terms</span>
+      <span>Website preview by <a href="https://mplaunch.com.au" target="_blank" rel="noopener">MP Launch</a></span>
     </div>
-    <div class="form reveal">
-      <label>Your name</label>
-      <input type="text" placeholder="First name" />
-      <label>Phone</label>
-      <input type="tel" placeholder="Best number to reach you" />
-      <label>Email <span class="muted" style="font-weight:400">(optional)</span></label>
-      <input type="email" placeholder="you@email.com" />
-      <label>How can we help? <span class="muted" style="font-weight:400">(optional)</span></label>
-      <textarea placeholder="A sentence is plenty — or leave it blank and we'll call you."></textarea>
-      <button class="btn btn-primary" type="button">Send enquiry</button>
-      <p class="reassure-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Everything you share stays private and confidential.</p>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<!-- footer -->
-<footer>
-  <div class="wrap">
-    <div class="fcols">
-      <div>
-        <img class="footlogo" src="https://dentonpsychology.com.au/wp-content/uploads/2026/01/cropped-Transparent-DCP-rounded-corners-logo-with-frame.png" alt="Denton Clinical Psychology" />
-        <p style="color:#bcd6c3">Compassionate, evidence-based clinical psychology for individuals, children and families. Caring for our community since 2005.</p>
-        <div class="socials">
-          <a href="https://www.facebook.com/dentonclinicalpsychology" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://www.instagram.com/dentonclinicalpsychology/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#help">How we help</a></li>
-          <li><a href="#team">Our psychologists</a></li>
-          <li><a href="#expect">What to expect</a></li>
-          <li><a href="#fees">Fees &amp; Medicare</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <ul>
-          <li><a href="tel:0299805742">(02) 9980 5742</a></li>
-          <li><a href="mailto:admin@dentonpsychology.com.au">admin@dentonpsychology.com.au</a></li>
-          <li>Welcoming new location — opening soon</li>
-          <li>Telehealth Australia-wide</li>
-        </ul>
-      </div>
-      <div>
-        <h4>For GPs &amp; referrers</h4>
-        <p style="color:#bcd6c3;font-size:.9rem">We welcome referrals and accept Mental Health Treatment Plans. Contact us for our referral details — we'll make it easy.</p>
-      </div>
-    </div>
-    <div class="fbar">
-      <span>Our psychologists are registered with AHPRA, Australia's national health practitioner regulator. © 2026 Denton Clinical Psychology.</span>
-      <span>Privacy Policy · Member, Australian Clinical Psychology Association (ACPA)</span>
-    </div>
-  </div>
-</footer>
+  <a class="mobile-call" href="tel:+61299805729">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call the practice
+  </a>
 
-<div class="concept-ribbon">Design concept · by <b>MP&nbsp;Launch</b></div>
-
-<script>
-  // gentle reveal on scroll
-  (function(){
-    var els=document.querySelectorAll('.reveal');
-    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});clearTimeout(window.__revealRescue);return;}
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
-    els.forEach(function(e){io.observe(e)});
-    clearTimeout(window.__revealRescue); // reveal wiring alive - cancel the no-JS rescue
-  })();
-  // hide team/portrait photos that fail to load (graceful)
-  document.querySelectorAll('img').forEach(function(img){
-    img.addEventListener('error',function(){ if(img.classList.contains('ph')||img.classList.contains('photo')){img.style.opacity=.0;img.style.background='#dcebdd';} });
-  });
-</script>
-
-<!-- MP Launch preview open-tracking — texts Peter when a lead opens this preview -->
-<script>
-(function(){try{
-  if(navigator.webdriver)return;
-  var slug="denton-preview", label="Fiona Denton — Denton Clinical Psychology";
-  var k="mpl_seen_"+slug, last=+localStorage.getItem(k)||0;
-  if(Date.now()-last<432e5)return;
-  localStorage.setItem(k,String(Date.now()));
-  new Image().src="https://mplaunch.com.au/api/preview-view?slug="+encodeURIComponent(slug)+"&label="+encodeURIComponent(label)+"&t="+Date.now();
-}catch(e){}})();
-</script>
+  <div class="concept-pill">Website &amp; refreshed identity concept <span>· MP Launch</span></div>
+  <script src="script.js" defer></script>
+  <script>
+  (function(){try{
+    if(navigator.webdriver)return;
+    var slug="denton-preview", label="Fiona Denton — Denton Clinical Psychology";
+    var key="mpl_seen_"+slug, last=+localStorage.getItem(key)||0;
+    if(Date.now()-last<432e5)return;
+    localStorage.setItem(key,String(Date.now()));
+    new Image().src="https://mplaunch.com.au/api/preview-view?slug="+encodeURIComponent(slug)+"&label="+encodeURIComponent(label)+"&t="+Date.now();
+  }catch(e){}})();
+  </script>
 </body>
 </html>
